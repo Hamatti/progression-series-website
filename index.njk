@@ -11,9 +11,33 @@ title: Turku Cardsports Pokemon TCG Progression Series!
     battle. Then we move to the next set, rinse and repeat. Games are best of 3.
   </p>
 
+  <h2>Total ({{series | finishedSeries}} sets finished)</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Games</th>
+        <th>Wins</th>
+        <th>Losses</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for player in collections.ranking %}
+      <tr>
+        <td>{{player.playerName}}</td>
+        <td>{{player.stats.games}}</td>
+        <td>{{player.stats.wins}}</td>
+        <td>{{player.stats.losses}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <hr />
   {% for serie in series %}
 
-  <h2>{{serie.name}}</h2>
+  <h2>{{serie.name}} ({{serie.ongoing | ongoing}})</h2>
 
   <h3>Ranking</h3>
   <table>

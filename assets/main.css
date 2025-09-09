@@ -41,3 +41,9 @@ ul {
     padding-bottom: 1em;
   }
 }
+
+hr {
+  width: 50%;
+  margin: 3em 0;
+  border-color: #fff;
+}

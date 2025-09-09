@@ -1,0 +1,47 @@
+---
+layout: layouts/base.njk
+title: Turku Cardsports Pokemon TCG Progression Series!
+---
+
+<main>
+  <h1>Turku Cardsports Pokemon TCG Progression Series!</h1>
+
+  <p>
+    We open half a booster box of cards per set, build a 60-card deck and
+    battle. Then we move to the next set, rinse and repeat. Games are best of 3.
+  </p>
+
+  {% for serie in series %}
+
+  <h2>{{serie.name}}</h2>
+
+  <h3>Ranking</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Games</th>
+        <th>Wins</th>
+        <th>Losses</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for player in collections.all[0].data[serie.id].table %}
+      <tr>
+        <td>{{player.playerName}}</td>
+        <td>{{player.stats.games}}</td>
+        <td>{{player.stats.wins}}</td>
+        <td>{{player.stats.losses}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h3>Matchups</h3>
+  <ul>
+    {% for match in collections.all[0].data[serie.id].matches %}
+    <li>{{match}}</li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</main>

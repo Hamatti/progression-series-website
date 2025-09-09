@@ -1,0 +1,43 @@
+main {
+  max-width: 80ch;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  width: 60ch;
+  border-spacing: 0;
+}
+
+thead {
+  background: black;
+  color: white;
+  & th {
+    padding: 0.5em 1em;
+    text-align: left;
+  }
+}
+
+tbody {
+  & tr:nth-child(2n) {
+    background: #ccc;
+  }
+  & td {
+    padding: 0.5em 1em;
+
+    &:not(:first-child) {
+      text-align: center;
+    }
+  }
+}
+
+ul {
+  list-style-type: "";
+
+  & li {
+    padding-bottom: 1em;
+  }
+}

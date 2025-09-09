@@ -28,7 +28,7 @@ title: Turku Cardsports Pokémon TCG Progression Series!
 
   <h2>Total ({{series | finishedSeries}} sets finished)</h2>
 
-  <table>
+  <table class="striped">
     <thead>
       <tr>
         <th>Name</th>
@@ -57,7 +57,7 @@ title: Turku Cardsports Pokémon TCG Progression Series!
   <h3>Ranking</h3>
 
   {{ collections.series | log }} {{ serie.id | log}}
-  <table>
+  <table class="striped">
     <thead>
       <tr>
         <th>Name</th>
@@ -79,11 +79,18 @@ title: Turku Cardsports Pokémon TCG Progression Series!
   </table>
   <details>
     <summary><h3>Matchups</h3></summary>
-    <ul>
+    <table>
       {% for match in collections.series[serie.id].matches %}
-      <li>{{match}}</li>
+      <tr>
+        <td>{{match[0]}}</td>
+        <td>-</td>
+        <td>{{match[1]}}</td>
+        <td>{{match[2]}}</td>
+        <td>-</td>
+        <td>{{match[3]}}</td>
+      </tr>
       {% endfor %}
-    </ul>
+    </table>
     {% endfor %}
   </details>
 </main>

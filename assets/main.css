@@ -43,9 +43,6 @@ thead {
 }
 
 tbody {
-  & tr:nth-child(2n) {
-    background: #ccc;
-  }
   & td {
     padding: 0.5em 1em;
 
@@ -55,12 +52,19 @@ tbody {
   }
 }
 
+.striped tr:nth-child(2n) {
+  background: #ccc;
+}
+
 ul {
   list-style-type: "";
 
   & li {
     padding-bottom: 1em;
     font-size: 1.25em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
   }
 }
 

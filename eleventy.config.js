@@ -4,7 +4,7 @@ function createRanking(matchData) {
 
   matchData.forEach((match) => {
     let [home, away, homeScore, awayScore] = match.split(":");
-    matches.push(`${home} - ${away} ${homeScore}-${awayScore}`);
+    matches.push([home, away, homeScore, awayScore]);
 
     if (!ranking[home]) {
       ranking[home] = { games: 0, wins: 0, losses: 0 };

@@ -79,10 +79,17 @@ header {
   display: flex;
   align-items: center;
   margin: 2.5em auto;
+  flex-direction: row;
 
   & img {
     width: 150px;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
   }
 }
 

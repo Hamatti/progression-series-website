@@ -3,13 +3,27 @@ layout: layouts/base.njk
 title: Turku Cardsports Pokemon TCG Progression Series!
 ---
 
-<main>
+<header>
+  <img src="/assets/progression-series-logo-v0.png" />
   <h1>Turku Cardsports Pokemon TCG Progression Series!</h1>
+</header>
+<main>
+  <div class="intro">
+    <p>
+      A <strong>Pokémon TCG Progression Series</strong> is a format where we
+      open half a booster box (16 boosters) from each set from the block one at
+      a time, starting with Scarlet and Violet base set. After each set, we
+      build a 60-card deck from what we've pulled so far, battle against each
+      other and repeat for every set in the block.
+    </p>
+    <p>
+      It's a format that challenges deckbuilding skills and gives us a reason to
+      play with cards we would otherwise not play with (or even have read
+      before).
+    </p>
+  </div>
 
-  <p>
-    We open half a booster box of cards per set, build a 60-card deck and
-    battle. Then we move to the next set, rinse and repeat. Games are best of 3.
-  </p>
+  <hr />
 
   <h2>Total ({{series | finishedSeries}} sets finished)</h2>
 
@@ -61,11 +75,20 @@ title: Turku Cardsports Pokemon TCG Progression Series!
     </tbody>
   </table>
 
-  <h3>Matchups</h3>
-  <ul>
-    {% for match in collections.all[0].data[serie.id].matches %}
-    <li>{{match}}</li>
+  <details>
+    <summary><h3>Matchups</h3></summary>
+    <ul>
+      {% for match in collections.all[0].data[serie.id].matches %}
+      <li>{{match}}</li>
+      {% endfor %}
+    </ul>
     {% endfor %}
-  </ul>
-  {% endfor %}
+  </details>
 </main>
+
+<footer>
+  <p>
+    This site is built by <a href="https://hamatti.org">Juhis</a> with
+    <a href="https://11ty.dev">Eleventy</a>.
+  </p>
+</footer>

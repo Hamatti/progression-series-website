@@ -44,7 +44,7 @@ export default async function (eleventyConfig) {
     return createRanking(matchData);
   });
 
-  eleventyConfig.addCollection("series", (collection) => {
+  eleventyConfig.addCollection("seriesScores", (collection) => {
     const all = collection.getAll();
     const data = all.find((t) => t.inputPath === "./index.njk").data;
 

@@ -44,11 +44,22 @@ export default async function (eleventyConfig) {
     return createRanking(matchData);
   });
 
+  eleventyConfig.addCollection("series", (collection) => {
+    const all = collection.getAll();
+    const data = all.find((t) => t.inputPath === "./index.njk").data;
+
+    const series = {};
+    data.series.forEach((serie) => {
+      return (series[serie.id] = data[serie.id]);
+    });
+
+    return series;
+  });
+
   eleventyConfig.addCollection("ranking", (collection) => {
     const items = collection.getAll()[0];
     const series = items.data.series;
 
-    // console.log(items.data[series[0].id]);
     const allRankings = series.map((serie) => {
       return items.data[serie.id].table;
     });

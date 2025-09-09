@@ -7,6 +7,7 @@ title: Turku Cardsports Pokémon TCG Progression Series!
   <img src="/assets/progression-series-logo-v0.png" />
   <h1>Turku Cardsports Pokémon TCG Progression Series!</h1>
 </header>
+
 <main>
   <div class="intro">
     <p>
@@ -54,6 +55,8 @@ title: Turku Cardsports Pokémon TCG Progression Series!
   <h2>{{serie.name}} ({{serie.ongoing | ongoing}})</h2>
 
   <h3>Ranking</h3>
+
+  {{ collections.series | log }} {{ serie.id | log}}
   <table>
     <thead>
       <tr>
@@ -64,7 +67,7 @@ title: Turku Cardsports Pokémon TCG Progression Series!
       </tr>
     </thead>
     <tbody>
-      {% for player in collections.all[0].data[serie.id].table %}
+      {% for player in collections.series[serie.id].table %}
       <tr>
         <td>{{player.playerName}}</td>
         <td>{{player.stats.games}}</td>
@@ -74,11 +77,10 @@ title: Turku Cardsports Pokémon TCG Progression Series!
       {% endfor %}
     </tbody>
   </table>
-
   <details>
     <summary><h3>Matchups</h3></summary>
     <ul>
-      {% for match in collections.all[0].data[serie.id].matches %}
+      {% for match in collections.series[serie.id].matches %}
       <li>{{match}}</li>
       {% endfor %}
     </ul>

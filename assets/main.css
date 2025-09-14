@@ -112,10 +112,8 @@ footer {
   }
 }
 
-.decks {
-  & img {
-    max-width: 100%;
-  }
+.deck {
+  max-width: 100%;
 }
 
 .subnav {

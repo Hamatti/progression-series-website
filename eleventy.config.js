@@ -50,7 +50,7 @@ export default async function (eleventyConfig) {
 
     const series = {};
     data.series.forEach((serie) => {
-      return (series[serie.id] = data[serie.id]);
+      series[serie.id] = data[serie.id];
     });
 
     return series;
@@ -85,10 +85,10 @@ export default async function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("ongoing", (isOngoing) => {
-    return isOngoing ? "ongoing" : "";
+    return isOngoing ? "ongoing" : "finished";
   });
 
   eleventyConfig.addFilter("finishedSeries", (series) => {
-    return series.filter((serie) => !serie.ongoing).lenght || 0;
+    return series.filter((serie) => !serie.ongoing).length || 0;
   });
 }

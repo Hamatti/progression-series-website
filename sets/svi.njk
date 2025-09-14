@@ -1,0 +1,59 @@
+---
+layout: layouts/base.njk
+title: Scarlet and Violet - Progression Series Turku
+---
+
+{% set serie='svi' %}
+
+<main>
+  <h1>Progression Series Turku</h1>
+  <nav class="subnav">
+    <a href="/">Home</a>
+  </nav>
+  <h2>Scarlet &amp; Violet (SVI)</h2>
+  <h3>Ranking</h3>
+
+  <table class="striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Games</th>
+        <th>Wins</th>
+        <th>Losses</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for player in collections.seriesScores[serie].table %}
+      <tr>
+        <td>{{ player.playerName }}</td>
+        <td>{{ player.stats.games }}</td>
+        <td>{{ player.stats.wins }}</td>
+        <td>{{ player.stats.losses }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <h3>Matchups</h3>
+  <table>
+    {% for match in collections.seriesScores[serie].matches %}
+    <tr>
+      <td>{{ match[0] }}</td>
+      <td>-</td>
+      <td>{{ match[1] }}</td>
+      <td>{{ match[2] }}</td>
+      <td>-</td>
+      <td>{{ match[3] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <h3>Decks</h3>
+  {% for player in ['juhis', 'broccoli-chan', 'harfed', 'eza', 'pontuzaa'] %}
+  <h4>{{ player }}</h4>
+  <a href="/assets/decks/{{ serie }}/{{ player }}.webp"
+    ><img
+      src="/assets/decks/{{ serie }}/{{ player }}.webp"
+      alt="{{ player }}'s deck"
+      class="deck"
+  /></a>
+  {% endfor %}
+</main>

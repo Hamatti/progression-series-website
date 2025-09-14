@@ -111,3 +111,12 @@ footer {
     color: #e19157;
   }
 }
+
+.deck {
+  max-width: 100%;
+}
+
+.subnav {
+  text-align: center;
+  width: 100%;
+}

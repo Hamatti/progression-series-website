@@ -50,7 +50,7 @@ export default async function (eleventyConfig) {
 
     const series = {};
     data.series.forEach((serie) => {
-      return (series[serie.id] = data[serie.id]);
+      series[serie.id] = data[serie.id];
     });
 
     return series;

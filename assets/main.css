@@ -111,3 +111,9 @@ footer {
     color: #e19157;
   }
 }
+
+.decks {
+  & img {
+    max-width: 100%;
+  }
+}

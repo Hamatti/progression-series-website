@@ -26,7 +26,7 @@ title: Turku Cardsports Pokémon TCG Progression Series!
 
   <hr />
 
-  <h2>Total ({{series | finishedSeries}} sets finished)</h2>
+  <h2>Total ({{ series | finishedSeries }} sets finished)</h2>
 
   <table class="striped">
     <thead>
@@ -40,10 +40,10 @@ title: Turku Cardsports Pokémon TCG Progression Series!
     <tbody>
       {% for player in collections.ranking %}
       <tr>
-        <td>{{player.playerName}}</td>
-        <td>{{player.stats.games}}</td>
-        <td>{{player.stats.wins}}</td>
-        <td>{{player.stats.losses}}</td>
+        <td>{{ player.playerName }}</td>
+        <td>{{ player.stats.games }}</td>
+        <td>{{ player.stats.wins }}</td>
+        <td>{{ player.stats.losses }}</td>
       </tr>
       {% endfor %}
     </tbody>
@@ -52,7 +52,7 @@ title: Turku Cardsports Pokémon TCG Progression Series!
   <hr />
   {% for serie in series %}
 
-  <h2>{{serie.name}} ({{serie.ongoing | ongoing}})</h2>
+  <h2>{{ serie.name }} ({{ serie.ongoing | ongoing }})</h2>
 
   <h3>Ranking</h3>
 
@@ -68,10 +68,10 @@ title: Turku Cardsports Pokémon TCG Progression Series!
     <tbody>
       {% for player in collections.seriesScores[serie.id].table %}
       <tr>
-        <td>{{player.playerName}}</td>
-        <td>{{player.stats.games}}</td>
-        <td>{{player.stats.wins}}</td>
-        <td>{{player.stats.losses}}</td>
+        <td>{{ player.playerName }}</td>
+        <td>{{ player.stats.games }}</td>
+        <td>{{ player.stats.wins }}</td>
+        <td>{{ player.stats.losses }}</td>
       </tr>
       {% endfor %}
     </tbody>
@@ -81,16 +81,24 @@ title: Turku Cardsports Pokémon TCG Progression Series!
     <table>
       {% for match in collections.seriesScores[serie.id].matches %}
       <tr>
-        <td>{{match[0]}}</td>
+        <td>{{ match[0] }}</td>
         <td>-</td>
-        <td>{{match[1]}}</td>
-        <td>{{match[2]}}</td>
+        <td>{{ match[1] }}</td>
+        <td>{{ match[2] }}</td>
         <td>-</td>
-        <td>{{match[3]}}</td>
+        <td>{{ match[3] }}</td>
       </tr>
       {% endfor %}
     </table>
     {% endfor %}
+  </details>
+
+  <details class="decks">
+    <summary><h3>Decks</h3></summary>
+    <h4>juhis</h4>
+    <a href="/assets/decks/svi/juhis.webp"
+      ><img src="/assets/decks/svi/juhis.webp" alt="Juhis's deck"
+    /></a>
   </details>
 </main>
 

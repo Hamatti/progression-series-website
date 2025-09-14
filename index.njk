@@ -4,7 +4,7 @@ title: Turku Cardsports Pokémon TCG Progression Series!
 ---
 
 <header>
-  <img src="/assets/progression-series-logo-v0.png" />
+  <img src="/assets/progression-series-logo-v0.png" alt="" />
   <h1>Turku Cardsports Pokémon TCG Progression Series!</h1>
 </header>
 
@@ -21,6 +21,10 @@ title: Turku Cardsports Pokémon TCG Progression Series!
       It's a format that challenges deckbuilding skills and gives us a reason to
       play with cards we would otherwise not play with (or even have read
       before).
+    </p>
+    <p>
+      You can see matchups and decks for individual sets by following the links
+      in their headings
     </p>
   </div>
 
@@ -52,7 +56,11 @@ title: Turku Cardsports Pokémon TCG Progression Series!
   <hr />
   {% for serie in series %}
 
-  <h2>{{ serie.name }} ({{ serie.ongoing | ongoing }})</h2>
+  <h2>
+    <a href="/sets/{{ serie.id }}"
+      >{{ serie.name }} ({{ serie.ongoing | ongoing }})</a
+    >
+  </h2>
 
   <h3>Ranking</h3>
 
@@ -76,30 +84,7 @@ title: Turku Cardsports Pokémon TCG Progression Series!
       {% endfor %}
     </tbody>
   </table>
-  <details>
-    <summary><h3>Matchups</h3></summary>
-    <table>
-      {% for match in collections.seriesScores[serie.id].matches %}
-      <tr>
-        <td>{{ match[0] }}</td>
-        <td>-</td>
-        <td>{{ match[1] }}</td>
-        <td>{{ match[2] }}</td>
-        <td>-</td>
-        <td>{{ match[3] }}</td>
-      </tr>
-      {% endfor %}
-    </table>
-    {% endfor %}
-  </details>
-
-  <details class="decks">
-    <summary><h3>Decks</h3></summary>
-    <h4>juhis</h4>
-    <a href="/assets/decks/svi/juhis.webp"
-      ><img src="/assets/decks/svi/juhis.webp" alt="Juhis's deck"
-    /></a>
-  </details>
+  {% endfor %}
 </main>
 
 <footer>

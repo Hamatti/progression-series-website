@@ -117,3 +117,8 @@ footer {
     max-width: 100%;
   }
 }
+
+.subnav {
+  text-align: center;
+  width: 100%;
+}

@@ -64,22 +64,24 @@ export default async function (eleventyConfig) {
       return items.data[serie.id].table;
     });
 
-    let combined = allRankings.reduce((accumulativeRanking, currentSeries) => {
-      return currentSeries.map((player) => {
-        const entry = accumulativeRanking.find(
+    const r = JSON.parse(JSON.stringify(allRankings)); // A hack to create deep copy.
+
+    let combined = r.slice(1).reduce((accumulativeRanking, currentSeries) => {
+      return accumulativeRanking.map((player) => {
+        const entry = currentSeries.find(
           (e) => e.playerName == player.playerName
         ) || {
           playerName: player.playerName,
           stats: { games: 0, wins: 0, losses: 0 },
         };
 
-        entry.stats.games += player.stats.games;
-        entry.stats.wins += player.stats.wins;
-        entry.stats.losses += player.stats.losses;
+        player.stats.games += entry.stats.games;
+        player.stats.wins += entry.stats.wins;
+        player.stats.losses += entry.stats.losses;
 
-        return entry;
+        return player;
       });
-    }, []);
+    }, r.slice(0, 1)[0]);
 
     return combined;
   });

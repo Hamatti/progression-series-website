@@ -1,1 +1,4 @@
-[{ "name": "Scarlet and Violet", "id": "svi", "ongoing": false }]
+[
+  { "name": "Scarlet and Violet", "id": "svi", "ongoing": false },
+  { "name": "Paldea Evolved", "id": "pal", "ongoing": true }
+]

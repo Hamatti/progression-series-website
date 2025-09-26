@@ -81,7 +81,7 @@ export function createFullRankingTable(eleventyCollection) {
   const playerStats = {};
 
   allRankingTables.forEach((table) => {
-    table.forEach((player) => {
+    table?.forEach((player) => {
       const entry = playerStats[player.playerName] || {
         playerName: player.playerName,
         stats: { games: 0, wins: 0, losses: 0 },

@@ -1,5 +1,6 @@
 [
   { "name": "Scarlet and Violet", "id": "svi", "ongoing": false },
   { "name": "Paldea Evolved", "id": "pal", "ongoing": false },
-  { "name": "Obsidian Flames", "id": "obf", "ongoing": false }
+  { "name": "Obsidian Flames", "id": "obf", "ongoing": false },
+  { "name": "151", "id": "mew", "ongoing": true }
 ]

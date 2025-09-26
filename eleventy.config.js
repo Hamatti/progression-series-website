@@ -10,7 +10,7 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addDataExtension("score", (contents, _) => {
     const matchesData = contents.split("\n");
-    return convertScoresToSeriesObjects(matchesData);
+    return convertScoresToSeriesObjects(matchesData || []);
   });
 
   eleventyConfig.addCollection("seriesScores", (collection) => {

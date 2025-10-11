@@ -46,9 +46,8 @@ title: 151 - Progression Series Turku
     </tr>
     {% endfor %}
   </table>
-  {#
   <h3>Decks</h3>
-  {% for player in ['juhis', 'broccoli-chan', 'harfed', 'eza', 'pontuzaa'] %}
+  {% for player in ['juhis', 'eza'] %}
   <h4>{{ player }}</h4>
   <a href="/assets/decks/{{ serie }}/{{ player }}.webp"
     ><img
@@ -56,5 +55,5 @@ title: 151 - Progression Series Turku
       alt="{{ player }}'s deck"
       class="deck"
   /></a>
-  {% endfor %} #}
+  {% endfor %}
 </main>

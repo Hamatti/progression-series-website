@@ -4,5 +4,5 @@
   { "name": "Obsidian Flames", "id": "obf", "ongoing": false },
   { "name": "151", "id": "mew", "ongoing": false },
   { "name": "Paradox Rift", "id": "par", "ongoing": false },
-  { "name": "Paldean Fates", "id": "paf", "ongoing": true }
+  { "name": "Paldean Fates", "id": "paf", "ongoing": false }
 ]

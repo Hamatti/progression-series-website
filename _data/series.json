@@ -5,5 +5,6 @@
   { "name": "151", "id": "mew", "ongoing": false },
   { "name": "Paradox Rift", "id": "par", "ongoing": false },
   { "name": "Paldean Fates", "id": "paf", "ongoing": false },
-  { "name": "Temporal Forces", "id": "tef", "ongoing": false }
+  { "name": "Temporal Forces", "id": "tef", "ongoing": false },
+  { "name": "Twilight Masquerade", "id": "twm", "ongoing": true }
 ]

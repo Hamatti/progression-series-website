@@ -6,5 +6,6 @@
   { "name": "Paradox Rift", "id": "par", "ongoing": false },
   { "name": "Paldean Fates", "id": "paf", "ongoing": false },
   { "name": "Temporal Forces", "id": "tef", "ongoing": false },
-  { "name": "Twilight Masquerade", "id": "twm", "ongoing": true }
+  { "name": "Twilight Masquerade", "id": "twm", "ongoing": false },
+  { "name": "Shrouded Fable", "id": "sfa", "ongoing": true }
 ]

@@ -3,14 +3,14 @@ layout: layouts/base.njk
 title: Scarlet and Violet - Progression Series Turku
 ---
 
-{% set serie='sfa' %}
+{% set serie='scr' %}
 
 <main>
   <h1>Progression Series Turku</h1>
   <nav class="subnav">
     <a href="/">Home</a>
   </nav>
-  <h2>Shrouded Fable (SFA)</h2>
+  <h2>Stellar Crown (SCR)</h2>
   <h3>Ranking</h3>
 
   <table class="striped">
@@ -46,6 +46,7 @@ title: Scarlet and Violet - Progression Series Turku
     </tr>
     {% endfor %}
   </table>
+  {#
   <h3>Decks</h3>
   {% for player in ['juhis', 'harfed', 'eza', 'pontuzaa'] %}
   <h4>{{ player }}</h4>
@@ -55,5 +56,5 @@ title: Scarlet and Violet - Progression Series Turku
       alt="{{ player }}'s deck"
       class="deck"
   /></a>
-  {% endfor %}
+  {% endfor %} #}
 </main>

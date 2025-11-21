@@ -7,5 +7,6 @@
   { "name": "Paldean Fates", "id": "paf", "ongoing": false },
   { "name": "Temporal Forces", "id": "tef", "ongoing": false },
   { "name": "Twilight Masquerade", "id": "twm", "ongoing": false },
-  { "name": "Shrouded Fable", "id": "sfa", "ongoing": true }
+  { "name": "Shrouded Fable", "id": "sfa", "ongoing": false },
+  { "name": "Stellar Crown", "id": "scr", "ongoing": true }
 ]

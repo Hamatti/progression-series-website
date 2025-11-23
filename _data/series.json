@@ -8,5 +8,6 @@
   { "name": "Temporal Forces", "id": "tef", "ongoing": false },
   { "name": "Twilight Masquerade", "id": "twm", "ongoing": false },
   { "name": "Shrouded Fable", "id": "sfa", "ongoing": false },
-  { "name": "Stellar Crown", "id": "scr", "ongoing": true }
+  { "name": "Stellar Crown", "id": "scr", "ongoing": false },
+  { "name": "Surging Sparks", "id": "ssp", "ongoing": true }
 ]

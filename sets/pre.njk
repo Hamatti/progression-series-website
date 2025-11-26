@@ -3,14 +3,14 @@ layout: layouts/base.njk
 title: Scarlet and Violet - Progression Series Turku
 ---
 
-{% set serie='ssp' %}
+{% set serie='pre' %}
 
 <main>
   <h1>Progression Series Turku</h1>
   <nav class="subnav">
     <a href="/">Home</a>
   </nav>
-  <h2>Surging Sparks (SSP)</h2>
+  <h2>Prismatic Evolutions (PRE)</h2>
   <h3>Ranking</h3>
 
   <table class="striped">
@@ -46,6 +46,7 @@ title: Scarlet and Violet - Progression Series Turku
     </tr>
     {% endfor %}
   </table>
+  {#
   <h3>Decks</h3>
   {% for player in ['juhis', 'harfed', 'eza', 'pontuzaa'] %}
   <h4>{{ player }}</h4>
@@ -56,4 +57,5 @@ title: Scarlet and Violet - Progression Series Turku
       class="deck"
   /></a>
   {% endfor %}
+  #}
 </main>

@@ -9,5 +9,6 @@
   { "name": "Twilight Masquerade", "id": "twm", "ongoing": false },
   { "name": "Shrouded Fable", "id": "sfa", "ongoing": false },
   { "name": "Stellar Crown", "id": "scr", "ongoing": false },
-  { "name": "Surging Sparks", "id": "ssp", "ongoing": true }
+  { "name": "Surging Sparks", "id": "ssp", "ongoing": false },
+  { "name": "Prismatic Evolutions", "id": "pre", "ongoing": true }
 ]

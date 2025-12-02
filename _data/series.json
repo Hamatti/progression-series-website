@@ -10,5 +10,6 @@
   { "name": "Shrouded Fable", "id": "sfa", "ongoing": false },
   { "name": "Stellar Crown", "id": "scr", "ongoing": false },
   { "name": "Surging Sparks", "id": "ssp", "ongoing": false },
-  { "name": "Prismatic Evolutions", "id": "pre", "ongoing": true }
+  { "name": "Prismatic Evolutions", "id": "pre", "ongoing": false },
+  { "name": "Journey Together", "id": "jtg", "ongoing": true }
 ]

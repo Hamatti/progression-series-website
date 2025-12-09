@@ -11,5 +11,6 @@
   { "name": "Stellar Crown", "id": "scr", "ongoing": false },
   { "name": "Surging Sparks", "id": "ssp", "ongoing": false },
   { "name": "Prismatic Evolutions", "id": "pre", "ongoing": false },
-  { "name": "Journey Together", "id": "jtg", "ongoing": true }
+  { "name": "Journey Together", "id": "jtg", "ongoing": false },
+  { "name": "Destined Rivals", "id": "dri", "ongoing": true }
 ]

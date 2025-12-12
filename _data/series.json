@@ -12,5 +12,6 @@
   { "name": "Surging Sparks", "id": "ssp", "ongoing": false },
   { "name": "Prismatic Evolutions", "id": "pre", "ongoing": false },
   { "name": "Journey Together", "id": "jtg", "ongoing": false },
-  { "name": "Destined Rivals", "id": "dri", "ongoing": true }
+  { "name": "Destined Rivals", "id": "dri", "ongoing": false },
+  { "name": "Black Bolt / White Flare", "id": "bw", "ongoing": true }
 ]

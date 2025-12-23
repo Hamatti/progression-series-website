@@ -13,5 +13,5 @@
   { "name": "Prismatic Evolutions", "id": "pre", "ongoing": false },
   { "name": "Journey Together", "id": "jtg", "ongoing": false },
   { "name": "Destined Rivals", "id": "dri", "ongoing": false },
-  { "name": "Black Bolt / White Flare", "id": "bw", "ongoing": true }
+  { "name": "Black Bolt / White Flare", "id": "bw", "ongoing": false }
 ]
